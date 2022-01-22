@@ -1,0 +1,14 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}

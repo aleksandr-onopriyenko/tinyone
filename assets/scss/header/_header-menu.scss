@@ -1,0 +1,10 @@
+.header-menu {
+  padding: 61px 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include md {
+    padding: 41px 0 0 0;
+  }
+}

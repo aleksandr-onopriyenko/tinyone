@@ -1,5 +1,5 @@
-@import "../../libs/normalize-scss/sass/normalize/import-now";
-@import "../../libs/font-awesome/scss/font-awesome";
+@use "../../libs/normalize-scss/sass/normalize/import-now";
+@use "../../libs/font-awesome/scss/font-awesome";
 
 @import "skins";
 @import "variables";
@@ -19,4 +19,4 @@
 
 @import "footer/footer";
 @import "footer/footer-contacts";
-@import "footer/footer-block";
+@import "footer/footer-block";

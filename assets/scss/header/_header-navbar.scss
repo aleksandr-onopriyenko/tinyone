@@ -1,0 +1,53 @@
+.header-navbar {
+  display: flex;
+  gap: 34px;
+  margin-right: -10px;
+  padding-top: 3px;
+  &__link {
+    display: block;
+    font-size: 1.375rem;
+    font-weight: 900;
+    padding: 10px 20px;
+    letter-spacing: 0.7px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 4px;
+      background-color: #000;
+
+      transition: width 0.5s;
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  @include md {
+    display: none;
+    width: 242px;
+    min-height: 100vh;
+    padding-top: 44px;
+
+    position: absolute;
+    right: -232px;
+    top: 0;
+
+    background-color: $color-accent;
+
+    li {
+      padding: 0 17px;
+      margin-bottom: 8px;
+    }
+  }
+}

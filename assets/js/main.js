@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
   /* menu */
-  let $btnHamburger = $('.header-navbar__hamburger');
-  let $navbarList = $('.header-navbar__list');
+  let $btnHamburger = $('.header__burger');
+  let $navbarList = $('.header-navbar');
   let $window = $(window);
   let $body = $('body');
   let isShow = false;
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   /* menu */
   let toggleActive = () => {
-    $btnHamburger.toggleClass('active');
+    $btnHamburger.toggleClass('header__burger--active');
     isShow ? $body.removeAttr('class') : $body.toggleClass('active');
     !isShow && playbackStatus && pauseSlideShow();
     $navbarList.fadeToggle(500);
@@ -29,7 +29,7 @@ $(document).ready(function () {
   };
 
   let resetMenu = () => {
-    $btnHamburger.removeClass('active');
+    $btnHamburger.removeClass('header__burger--active');
     $body.removeAttr('class');
     $navbarList.removeAttr('style');
     isShow = false;
