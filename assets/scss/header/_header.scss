@@ -19,7 +19,7 @@
 
     &.header__burger--active {
       position: relative;
-      // overflow: hidden;
+      z-index: 20;
       span {
         position: absolute;
         background-color: #fff;

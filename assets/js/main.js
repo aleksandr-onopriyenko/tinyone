@@ -10,9 +10,9 @@ $(document).ready(function () {
   /* menu */
 
   /* slider */
-  let $slides = $('.slide');
-  let $indContainer = $('.indicators');
-  let $indItems = $('.indicator');
+  let $slides = $('.slide__item');
+  let $indContainer = $('.slide-pagination');
+  let $indItems = $('.slide-pagination__item');
   let currentSlide = 0;
   let playbackStatus = true;
   const carouselInterval = 5000;
@@ -85,6 +85,6 @@ $(document).ready(function () {
     gotoNSlide(+e.target.getAttribute('data-slide-to'));
   };
 
-  $indContainer.on('click', '.indicator', clickIndicatorBtn);
+  $indContainer.on('click', '.slide-pagination__item', clickIndicatorBtn);
   /* slider */
 });
