@@ -9,6 +9,10 @@ html {
   font-size: $font-size;
   line-height: 1.1em;
   overflow-y: scroll;
+
+  &.active {
+    overflow: hidden;
+  }
 }
 
 body {

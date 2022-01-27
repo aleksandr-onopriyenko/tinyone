@@ -1,10 +1,10 @@
 .header-slider {
-  padding: 55px 40px 46px 10px;
+  padding: 55px 30px 47px 0px;
   min-height: 550px;
   overflow: hidden;
 
   @include md {
-    padding: 37px 0 50px 0;
+    padding: 37px 0 37px 0;
   }
   .slide {
   position: relative;
@@ -29,7 +29,13 @@
       @include md {
         grid-template-columns: 1fr 1fr;
         column-gap: 40px;
+        row-gap: 9px;
         justify-content: space-between;
+      }
+
+      @include sm {
+        column-gap: 20px;
+        row-gap: 17px;
       }
 
 
@@ -52,12 +58,13 @@
 
        font-size: 2rem;
        @include md-sm {
-         padding-top: 15px;
-         line-height: 1.1em;
+         padding-top: 19px;
+         line-height: 1.18em;
        }
 
        @include sm {
          grid-column: span 2;
+         padding-top: 63px;
        }
     }
 
@@ -75,6 +82,14 @@
       grid-row: 3 / 4;
       line-height: 1.25em;
       opacity: 0.7;
+
+      @include md {
+        padding-top: 10px;
+      }
+
+      @include sm {
+        padding-top: 3px;
+      }
     }
 
     &__item-os {
@@ -84,6 +99,10 @@
 
       display: flex;
       gap: 35px;
+
+      @include md {
+        padding-bottom: 5px;
+      }
 
       @include sm {
         grid-column: span 2;
@@ -107,6 +126,8 @@
 
       @include sm {
         grid-row: 3 / 5;
+        padding-top: 7px;
+        padding-bottom: 16px;
       }
 
       img {
@@ -126,7 +147,11 @@
 
       @include md {
         margin-left: 0;
-        margin-top: 25px;
+        margin-top: 27px;
+      }
+
+      @include sm {
+        margin-top: 32px;
       }
 
       &__item {

@@ -4,6 +4,7 @@ $(document).ready(function () {
   let $btnHamburger = $('.header__burger');
   let $navbarList = $('.header-navbar');
   let $window = $(window);
+  let $html = $('html');
   let $body = $('body');
   let isShow = false;
   let isStop = true;
@@ -23,6 +24,7 @@ $(document).ready(function () {
   let toggleActive = () => {
     $btnHamburger.toggleClass('header__burger--active');
     isShow ? $body.removeAttr('class') : $body.toggleClass('active');
+    isShow ? $html.removeAttr('class') : $html.toggleClass('active');
     !isShow && playbackStatus && pauseSlideShow();
     $navbarList.fadeToggle(500);
     isShow = !isShow;
