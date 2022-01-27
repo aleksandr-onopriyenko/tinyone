@@ -1,0 +1,51 @@
+.footer-bottom {
+  display: grid;
+
+  line-height: 1.3em;
+
+  column-gap: 20px;
+  grid-template-columns: 300px repeat(4, 1fr);
+  @include lg-md {
+    grid-template-columns: 350px 1fr 1fr;
+  }
+  @include md-sm {
+    grid-template-columns: 300px 1fr 1fr;
+  }
+  @include sm {
+    grid-template-columns: 1fr 1fr;
+  }
+  row-gap: 40px;
+
+  &__navblock {
+    border-right: 2px solid rgba($color-gray-light, 0.1);
+
+    &:hover {
+      border-color: rgba($color-gray-light, 0.2);
+    }
+
+    a {
+      transition: color 0.3s;
+      &:hover,
+      &:focus {
+        color: $color-light;
+      }
+    }
+  }
+
+  &__contact {
+    padding-left: 0;
+
+    font-style: normal;
+
+    @include lg {
+      grid-row: 1 / 3;
+    }
+    @include sm {
+      grid-column: 1 / 3;
+    }
+
+    a {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 90px;
+  padding-bottom: 140px;
+
+  color: $color-gray-light;
+  background-color: $color-primary;
+
+  @include lg {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}

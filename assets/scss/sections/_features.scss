@@ -38,8 +38,6 @@
 .features-content {
   display: grid;
 
-  padding: 0 10px;
-
   column-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   @include lg-sm {
