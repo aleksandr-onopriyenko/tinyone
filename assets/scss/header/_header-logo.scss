@@ -1,6 +1,7 @@
 .header-logo {
   display: flex;
   align-items: center;
+
   margin-bottom: -2px;
 
   &__image {
@@ -8,8 +9,9 @@
   }
 
   &__title {
-    font-size: 1.875rem;
     margin: 0;
     margin-bottom: 5px;
+
+    font-size: 1.875rem;
   }
 }

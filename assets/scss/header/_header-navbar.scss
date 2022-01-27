@@ -1,53 +1,59 @@
 .header-navbar {
   display: flex;
-  gap: 34px;
+
   margin-right: -20px;
   padding-top: 3px;
+
+  gap: 34px;
+  @include md {
+    position: absolute;
+    top: 0;
+    right: -232px;
+
+    display: none;
+
+    width: 242px;
+    min-height: 100vh;
+    padding-top: 44px;
+
+    background-color: $color-accent;
+
+    li {
+      margin-bottom: 8px;
+      padding: 0 17px;
+    }
+  }
   &__link {
-    display: block;
-    font-size: 1.375rem;
-    font-weight: 900;
-    padding: 15px 20px;
-    letter-spacing: 0.7px;
     position: relative;
 
+    display: block;
+
+    padding: 15px 20px;
+
+    letter-spacing: 0.7px;
+
+    font-size: 1.375rem;
+    font-weight: 900;
+
     &:before {
-      content: "";
-      width: 0;
-      height: 4px;
-      background-color: #000;
-
-      transition: width 0.5s;
-
       position: absolute;
       bottom: 0;
       left: 50%;
 
+      width: 0;
+      height: 4px;
+
+      content: "";
+      transition: width 0.5s;
       transform: translateX(-50%);
+
+      background-color: #000000;
     }
 
     &:hover {
       &:before {
         width: 100%;
       }
-    }
-  }
-
-  @include md {
-    display: none;
-    width: 242px;
-    min-height: 100vh;
-    padding-top: 44px;
-
-    position: absolute;
-    right: -232px;
-    top: 0;
-
-    background-color: $color-accent;
-
-    li {
-      padding: 0 17px;
-      margin-bottom: 8px;
     }
   }
 }

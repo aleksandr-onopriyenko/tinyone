@@ -1,8 +1,9 @@
 .header-menu {
-  padding: 58px 0 0 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  padding: 58px 0 0 0;
 
   @include md {
     padding: 41px 0 0 0;
