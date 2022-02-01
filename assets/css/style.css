@@ -3529,12 +3529,15 @@ body {
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 body.active {
   position: relative;
-  -webkit-transform: translateX(-232px);
-      -ms-transform: translateX(-232px);
-          transform: translateX(-232px);
+  -webkit-transform: translateX(-252px);
+      -ms-transform: translateX(-252px);
+          transform: translateX(-252px);
 }
 body.active:before {
   position: absolute;
