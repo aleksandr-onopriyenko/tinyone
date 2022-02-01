@@ -18,10 +18,11 @@ html {
 
 body {
   transition: transform 0.5s;
+  transform: translateX(0);
   &.active {
     position: relative;
 
-    transform: translateX(-232px);
+    transform: translateX(-252px);
 
     &:before {
       position: absolute;
